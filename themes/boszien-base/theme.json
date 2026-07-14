@@ -6,7 +6,7 @@
     "useRootPaddingAwareAlignments": true,
     "layout": {
       "contentSize": "760px",
-      "wideSize": "1180px"
+      "wideSize": "1370px"
     },
     "color": {
       "defaultPalette": false,
@@ -63,7 +63,7 @@
     "shadow": { "defaultPresets": false, "presets": [] },
     "custom": {
       "color": { "border": "rgba(16, 43, 37, 0.16)", "border-dark": "rgba(220, 235, 229, 0.2)" },
-      "layout": { "shell": "1180px", "reading": "760px" },
+      "layout": { "shell": "1180px", "reading": "760px", "editorial": "1370px" },
       "radius": { "sm": "0.25rem", "md": "0.5rem", "lg": "0.75rem", "pill": "999px" }
     }
   },

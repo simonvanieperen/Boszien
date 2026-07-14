@@ -7,4 +7,7 @@ themes/*
 !reports/
 reports/*
 !reports/BZ-CODEX-SITE-02R1/
-!reports/BZ-CODEX-SITE-02R1/**
+reports/BZ-CODEX-SITE-02R1/*
+!reports/BZ-CODEX-SITE-02R1/scripts/
+!reports/BZ-CODEX-SITE-02R1/scripts/**
+!reports/BZ-CODEX-SITE-02R1/BZ-CODEX-SITE-02R1-report.md

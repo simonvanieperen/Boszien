@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.1 — visual parity recovery
+
+- Restored the approved two-part homepage hero with diagonal mint field, full method panel, icon cues, route rows, and clear CTA hierarchy.
+- Recomposed post 519 as an asymmetric editorial layout with compact hero, sticky navigation, primary core conclusion, visual evidence ladder, and dark final verdict.
+- Added reliable home/article navigation states and aligned header controls without changing editorial claims or source meaning.
+- Bumped direct stylesheet delivery to `0.2.1` and widened only the editorial layout token needed by the article composition.
+
 ## 0.2.0
 
 - Publieke CSS-architectuur geconsolideerd naar `theme.json` en `style.css`.
