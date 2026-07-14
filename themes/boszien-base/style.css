@@ -276,7 +276,7 @@ textarea {
 	padding-inline: 0.9rem;
 	border-radius: var(--wp--custom--radius--sm);
 	background: var(--wp--preset--color--deep);
-	color: var(--wp--preset--color--deep-text);
+	color: var(--wp--preset--color--deep-text) !important;
 }
 
 .page-id-383 .bz-desktop-nav a[href*="claimchecks"],

@@ -68,7 +68,7 @@ $applyItems = @(
     },
     @{
         service = 'fse'; method = 'POST'; path = "/template-parts/$headerId/apply-patch"
-        body = @{ confirmation = 'APPLY_PATCH'; expectedHash = $currentHeaderHash; operations = @(@{ type = 'replace_exact'; oldText = $currentHeader; newText = $nextHeader }) }
+        body = @{ confirmation = 'APPLY_STRUCTURE_PATCH'; expectedHash = $currentHeaderHash; operations = @(@{ type = 'replace_exact'; oldText = $currentHeader; newText = $nextHeader }) }
     }
 )
 $apply = Invoke-ControlPlane -Endpoint 'batch/execute' -Items $applyItems
