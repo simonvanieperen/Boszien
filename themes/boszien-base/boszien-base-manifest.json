@@ -3,7 +3,7 @@
   "name": "Boszien Base",
   "version": "0.2.1",
   "textDomain": "boszien-base",
-  "status": "visual-parity-recovery",
+  "status": "visual-parity-icon-recovery",
   "publicatieVeiligheid": {
     "queryLoops": true,
     "commentsTemplate": false,

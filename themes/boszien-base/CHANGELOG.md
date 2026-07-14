@@ -2,6 +2,9 @@
 
 ## 0.2.1 — visual parity recovery
 
+- Aligned the homepage and article compositions more closely with the approved desktop and mobile reference images.
+- Replaced improvised CSS and text glyphs with a local, pinned Lucide 1.10.0 icon set under the ISC license; no runtime CDN or external script was added.
+- Added the segmented mobile menu/search control, single-column mobile method panel, and reference-led desktop article rail.
 - Restored the approved two-part homepage hero with diagonal mint field, full method panel, icon cues, route rows, and clear CTA hierarchy.
 - Recomposed post 519 as an asymmetric editorial layout with compact hero, sticky navigation, primary core conclusion, visual evidence ladder, and dark final verdict.
 - Added reliable home/article navigation states and aligned header controls without changing editorial claims or source meaning.
