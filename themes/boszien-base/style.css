@@ -2737,4 +2737,11 @@ html body .bz7h-route {
 		width: 1.25rem;
 		height: 1.25rem;
 	}
+
+	.single-post .bz-article-hero h1 {
+		font-size: 36px !important;
+		overflow-wrap: normal;
+		word-break: normal;
+		hyphens: none;
+	}
 }
