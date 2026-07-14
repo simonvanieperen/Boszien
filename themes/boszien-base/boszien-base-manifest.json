@@ -1,0 +1,18 @@
+{
+  "theme": "boszien-base",
+  "name": "Boszien Base",
+  "version": "0.2.1",
+  "textDomain": "boszien-base",
+  "status": "visual-parity-recovery",
+  "publicatieVeiligheid": {
+    "queryLoops": true,
+    "commentsTemplate": false,
+    "relatedPosts": false,
+    "automaticLatestPosts": false
+  },
+  "blockTheme": true,
+  "themeJsonVersion": 3,
+  "interactiveBlocks": [
+    "boszien/evidence-meter"
+  ]
+}

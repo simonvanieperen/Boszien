@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "boszien/evidence-meter",
+  "title": "Boszien meetlat",
+  "category": "widgets",
+  "icon": "chart-bar",
+  "description": "Interactieve meetlat voor het duiden van gezondheidsclaims.",
+  "textdomain": "boszien-base",
+  "supports": {
+    "html": false,
+    "interactivity": true
+  },
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}
