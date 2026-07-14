@@ -3,7 +3,7 @@ Theme Name: Boszien Base
 Theme URI: https://boszien.org/
 Author: Boszien
 Description: Modern, redactioneel en gehard block theme voor Boszien. Inhoud eerst, minimalistisch Dutch Design en publicatieveilig.
-Version: 0.2.1
+Version: 0.2.2
 Requires at least: 7.0
 Tested up to: 7.0.1
 Requires PHP: 8.4
@@ -11,7 +11,7 @@ Text Domain: boszien-base
 */
 
 /*
- * Boszien Base 0.2.1 — geconsolideerde publieke laag.
+ * Boszien Base 0.2.2 — geconsolideerde publieke laag.
  * theme.json bezit tokens en globale typografie; dit bestand bezit componenten.
  * Geen layoutmaskers, geen 100vw-trucs en geen visuele logica in Custom CSS.
  */
@@ -2676,6 +2676,22 @@ html body .bz7h-route {
 	.single-post .bz-eindoordeel {
 		min-height: 300px;
 		border-top: 0;
+	}
+}
+
+/* Keep the article readable between the tablet and full three-column layouts. */
+@media (min-width: 1001px) and (max-width: 1359px) {
+	.single-post .bz-single-content > .wp-block-post-content {
+		grid-template-columns: 11rem minmax(0, 720px);
+		justify-content: center;
+		column-gap: clamp(1.5rem, 3vw, 3rem);
+	}
+
+	.single-post .bz-single-content > .wp-block-post-content > .bz-proof-ladder,
+	.single-post .bz-single-content > .wp-block-post-content > .bz-eindoordeel {
+		grid-column: 2 !important;
+		grid-row: auto;
+		max-width: 720px !important;
 	}
 }
 

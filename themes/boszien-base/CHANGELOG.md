@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2 — article breakpoint recovery
+
+- Prevented the article evidence triad from collapsing between the tablet and full three-column desktop layouts.
+- Bumped the directly linked stylesheet URL so the responsive fix reaches public visitors without a stale `0.2.1-patch3` browser cache.
+
 ## 0.2.1 — visual parity recovery
 
 - Aligned the homepage and article compositions more closely with the approved desktop and mobile reference images.

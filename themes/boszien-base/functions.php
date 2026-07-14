@@ -44,5 +44,18 @@ function boszien_base_register_pattern_category(): void {
 }
 add_action( 'init', 'boszien_base_register_pattern_category' );
 
+/**
+ * Keep the editor-only AI Type Ahead bundle off the public site.
+ */
+function boszien_base_dequeue_editor_only_ai_assets(): void {
+	if ( is_admin() ) {
+		return;
+	}
+
+	wp_dequeue_script( 'ai_type_ahead' );
+	wp_dequeue_style( 'ai_type_ahead' );
+}
+add_action( 'wp_enqueue_scripts', 'boszien_base_dequeue_editor_only_ai_assets', PHP_INT_MAX );
+
 require_once get_template_directory() . '/inc/block-styles.php';
 require_once get_template_directory() . '/inc/interactivity-api.php';
