@@ -1,0 +1,32 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"bz-site-header"} /-->
+
+<!-- wp:group {"tagName":"main","anchor":"main-content","className":"bz-site-main bz-archive-results","layout":{"type":"default"}} -->
+<main id="main-content" class="wp-block-group bz-site-main bz-archive-results"><!-- wp:group {"className":"bz-section","layout":{"type":"default"}} -->
+<div class="wp-block-group bz-section"><!-- wp:paragraph {"className":"bz-eyebrow"} -->
+<p class="bz-eyebrow">Overzicht</p>
+<!-- /wp:paragraph -->
+<!-- wp:query-title {"type":"archive","showPrefix":false,"level":1} /-->
+<!-- wp:term-description /-->
+
+<!-- wp:query {"queryId":2,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"className":"bz-results-grid"} -->
+<div class="wp-block-query bz-results-grid"><!-- wp:post-template -->
+<!-- wp:post-terms {"term":"category"} /-->
+<!-- wp:post-title {"isLink":true,"level":2} /-->
+<!-- wp:post-excerpt {"moreText":"Lees verder"} /-->
+<!-- wp:post-date {"format":"j F Y"} /-->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination-previous {"label":"Vorige"} /-->
+<!-- wp:query-pagination-numbers /-->
+<!-- wp:query-pagination-next {"label":"Volgende"} /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph --><p>Er zijn nog geen gepubliceerde artikelen binnen dit overzicht.</p><!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"bz-site-footer"} /-->
