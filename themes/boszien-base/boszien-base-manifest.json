@@ -1,9 +1,9 @@
 {
   "theme": "boszien-base",
   "name": "Boszien Base",
-  "version": "0.2.2",
+  "version": "0.7.2-rc.1",
   "textDomain": "boszien-base",
-  "status": "visual-parity-icon-recovery",
+  "status": "theme-and-fse-synchronized",
   "publicatieVeiligheid": {
     "queryLoops": true,
     "commentsTemplate": false,

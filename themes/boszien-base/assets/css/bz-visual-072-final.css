@@ -1,0 +1,47 @@
+/* BZ-VISUAL-072 final last-mile guard; canonical declarations also live in style.css. */
+.home .bz-site-footer .bz-footer-grid.bz72-footer-grid { column-gap: 35px !important; row-gap: 12px !important; }
+.home .bz72-footer-brand,
+.home .bz72-footer-links,
+.home .bz72-footer-more,
+.home .bz72-footer-service { align-self: start !important; height: auto !important; min-height: 0 !important; margin: 0 !important; }
+.home .bz72-footer-brand .bz-footer-note,
+.home .bz72-footer-more ul,
+.home .bz72-footer-service ul { margin: 0 !important; }
+.home .bz72-footer-links { display: block !important; }
+.home .bz72-footer-links h3 { height: auto !important; min-height: 0 !important; line-height: 1.2 !important; }
+.home .bz72-footer-links nav { display: block !important; height: auto !important; min-height: 0 !important; margin: 0 !important; }
+.home .bz72-footer-links .wp-block-navigation__container { display: flex !important; flex: 0 0 auto !important; flex-direction: column !important; align-items: flex-start !important; flex-wrap: nowrap !important; height: auto !important; min-height: 0 !important; gap: 6px !important; }
+.home .bz72-footer-links .wp-block-navigation-item { display: block !important; width: auto !important; height: auto !important; min-height: 0 !important; margin: 0 !important; }
+.home .bz72-footer-links .wp-block-navigation-item__content { display: block !important; height: auto !important; min-height: 0 !important; padding: 0 !important; line-height: 1.35 !important; }
+.home .bz72-footer-links .wp-block-navigation-item:nth-child(1) { order: 3; }
+.home .bz72-footer-links .wp-block-navigation-item:nth-child(2) { order: 2; }
+.home .bz72-footer-links .wp-block-navigation-item:nth-child(3) { order: 1; }
+.home .bz72-footer-links .wp-block-navigation-item:nth-child(n+4) { display: none !important; }
+.home .bz72-footer-bottom { align-self: end !important; height: auto !important; min-height: 0 !important; margin: 0 !important; }
+.home .bz72-footer-more li,
+.home .bz72-footer-service li { height: auto !important; min-height: 0 !important; }
+.home .bz72-footer-more a,
+.home .bz72-footer-service a { display: inline !important; height: auto !important; min-height: 0 !important; line-height: 1.35 !important; }
+
+.single-post .bz72-article-main .bz72-article-hero h1 { width: 760px !important; max-width: 760px !important; margin-bottom: 25px !important; font-size: 46px !important; line-height: 1.03 !important; }
+.single-post .bz72-title-break { display: block; }
+.single-post .bz72-article-main .bz72-article-hero .bz-article-deck { line-height: 1.4 !important; }
+.single-post .bz72-single-content > .wp-block-post-content > .bz72-article-summary { margin: -225px 0 50px 266px !important; }
+.single-post .bz72-evidence-level__shape { position: relative !important; flex: 0 0 25px !important; border: 0 !important; background: var(--bz72-mint) !important; }
+.single-post .bz72-evidence-level__shape::after { content: ''; position: absolute; inset: 2px; background: var(--bz72-ink-deep); clip-path: inherit; }
+.single-post .bz72-evidence-level--2 .bz72-evidence-level__shape,
+.single-post .bz72-evidence-level--5 .bz72-evidence-level__shape { border: 1px solid var(--bz72-mint) !important; background: transparent !important; }
+.single-post .bz72-evidence-level--2 .bz72-evidence-level__shape::after,
+.single-post .bz72-evidence-level--5 .bz72-evidence-level__shape::after { display: none; }
+
+@media (max-width: 900px) {
+	.home .bz72-footer-links { display: none !important; }
+	.single-post .bz72-title-break { display: none; }
+	.single-post .bz72-article-main .bz72-article-hero h1 { width: auto !important; max-width: none !important; }
+	.home .bz72-submit-cta { margin-bottom: 32px !important; }
+	.single-post .bz72-article-main .bz72-article-hero h1 { font-size: 54px !important; }
+	.single-post .bz72-single-content > .wp-block-post-content > .bz72-article-summary { width: auto !important; max-width: none !important; margin: 0 0 28px !important; }
+}
+@media (max-width: 600px) {
+	.single-post .bz72-article-main .bz72-article-hero h1 { font-size: 42px !important; }
+}

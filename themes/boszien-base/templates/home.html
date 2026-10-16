@@ -1,25 +1,43 @@
-<!-- wp:template-part {"slug":"header","tagName":"header","className":"bz-site-header"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"bz-site-header","theme":"boszien-base"} /-->
 
 <!-- wp:group {"tagName":"main","anchor":"main-content","className":"bz-site-main bz-home-fallback","layout":{"type":"constrained","contentSize":"1180px"}} -->
 <main id="main-content" class="wp-block-group bz-site-main bz-home-fallback"><!-- wp:group {"className":"bz-section","layout":{"type":"default"}} -->
 <div class="wp-block-group bz-section"><!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading">Het berichtenoverzicht wordt nog ingericht.</h1>
+<h1 class="wp-block-heading">Artikelen</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"bz-lead"} -->
-<p class="bz-lead">Boszien toont hier nog geen automatische lijst met berichten. Zo blijven ongecontroleerde concepten buiten beeld.</p>
+<p class="bz-lead">Gepubliceerde uitleg en controles van gezondheidsclaims.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/claimchecks/">Naar Claimchecks</a></div>
-<!-- /wp:button -->
+<!-- wp:query {"queryId":4,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default"}} -->
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:post-terms {"term":"category"} /-->
 
-<!-- wp:button {"className":"is-style-bz-secondary"} -->
-<div class="wp-block-button is-style-bz-secondary"><a class="wp-block-button__link wp-element-button" href="/onderwerpen/">Naar Onderwerpen</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
+<!-- wp:post-title {"isLink":true,"level":2} /-->
+
+<!-- wp:post-excerpt {"moreText":"Lees verder"} /-->
+
+<!-- wp:post-date {"format":"j F Y"} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination-previous {"label":"Vorige"} /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next {"label":"Volgende"} /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>Er zijn nog geen gepubliceerde artikelen.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
 <!-- /wp:group --></main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"bz-site-footer"} /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"bz-site-footer","theme":"boszien-base"} /-->

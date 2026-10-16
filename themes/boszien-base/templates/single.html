@@ -1,25 +1,59 @@
-<!-- wp:template-part {"slug":"header","tagName":"header","className":"bz-site-header"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"bz-site-header","theme":"boszien-base"} /-->
 
 <!-- wp:html -->
 <div class="bz-reading-progress" aria-hidden="true"></div>
 <!-- /wp:html -->
 
-<!-- wp:group {"tagName":"main","anchor":"main-content","className":"bz-site-main","layout":{"type":"default"}} -->
-<main id="main-content" class="wp-block-group bz-site-main"><!-- wp:group {"className":"bz-page-header bz-article-hero","layout":{"type":"default"}} -->
-<div class="wp-block-group bz-page-header bz-article-hero"><!-- wp:post-terms {"term":"category","className":"bz-eyebrow"} /-->
+<!-- wp:group {"tagName":"main","anchor":"main-content","className":"bz-site-main bz72-article-main","layout":{"type":"default"}} -->
+<main id="main-content" class="wp-block-group bz-site-main bz72-article-main"><!-- wp:group {"className":"bz72-article-intro","layout":{"type":"default"}} -->
+<div class="wp-block-group bz72-article-intro"><!-- wp:group {"tagName":"aside","className":"bz72-article-meta","layout":{"type":"default"}} -->
+<aside class="wp-block-group bz72-article-meta"><!-- wp:post-terms {"term":"category","className":"bz-eyebrow"} /-->
 
-<!-- wp:post-title {"level":1} /-->
+<!-- wp:paragraph {"className":"bz72-meta-label"} -->
+<p class="bz72-meta-label">Publicatiedatum</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:post-excerpt {"moreText":"","showMoreOnNewLine":false,"className":"bz-article-deck"} /-->
+<!-- wp:post-date {"format":"j F Y","className":"bz72-meta-value"} /-->
 
-<!-- wp:group {"className":"bz-post-meta","layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group bz-post-meta"><!-- wp:post-date {"format":"j F Y"} /--></div>
-<!-- /wp:group --></div>
+<!-- wp:paragraph {"className":"bz72-meta-label"} -->
+<p class="bz72-meta-label">Auteur</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"bz72-meta-value"} -->
+<p class="bz72-meta-value">Boszien redactie</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"bz72-meta-label"} -->
+<p class="bz72-meta-label">Laatste update</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:post-date {"displayType":"modified","format":"j F Y","className":"bz72-meta-value"} /-->
+
+<!-- wp:group {"className":"bz72-share-links","layout":{"type":"default"}} -->
+<div class="wp-block-group bz72-share-links"><!-- wp:paragraph -->
+<p>Deel deze pagina</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<button type="button" data-bz-copy><span class="bz72-ui-icon bz72-ui-link" aria-hidden="true"></span>Kopieer link</button><a data-bz-email href="#"><span class="bz72-ui-icon bz72-ui-mail" aria-hidden="true"></span>E-mail deze pagina</a>
+<!-- /wp:html --></div>
+<!-- /wp:group --></aside>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"bz-single-content","layout":{"type":"default"}} -->
-<div class="wp-block-group bz-single-content"><!-- wp:post-content {"layout":{"type":"default"}} /--></div>
+<!-- wp:group {"className":"bz-page-header bz-article-hero bz72-article-hero","layout":{"type":"default"}} -->
+<div class="wp-block-group bz-page-header bz-article-hero bz72-article-hero"><!-- wp:post-title {"level":1} /-->
+
+<!-- wp:post-excerpt {"moreText":"","showMoreOnNewLine":false,"className":"bz-article-deck"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<aside class="bz72-article-toc" aria-label="In dit artikel" hidden><p class="bz72-toc-title">In dit artikel</p><ol></ol><button type="button" data-bz-print><span class="bz72-ui-icon bz72-ui-print" aria-hidden="true"></span>Opslaan als PDF</button></aside>
+<!-- /wp:html --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"bz-single-content bz72-single-content","layout":{"type":"default"}} -->
+<div class="wp-block-group bz-single-content bz72-single-content"><!-- wp:post-content {"layout":{"type":"default"}} /--></div>
 <!-- /wp:group --></main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"bz-site-footer"} /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"bz-site-footer","theme":"boszien-base"} /-->

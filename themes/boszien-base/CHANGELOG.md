@@ -1,5 +1,67 @@
 # Changelog
 
+## 0.7.2-rc.1 — sitewide editorial modernisation
+- Generate article contents from the actual H2/H3 headings, preserve existing anchors and hide an empty contents panel.
+- Let long article content determine its height so the footer cannot overlap it; keep the compact article footer and tablet footer consistent.
+- Report clipboard failures accurately, restore the copy button after repeated clicks and keep shared controls in one script.
+- Refresh supplementary asset cache keys from their content hashes.
+
+- Replaced oversized information-page title slides with compact editorial title bands.
+- Tightened section rhythm across method, overview, contact, glossary, form and legal page archetypes.
+- Constrained long legal copy to a readable measure without changing legal wording.
+- Kept closed search content out of layout measurements and contained the open search panel at mobile and tablet widths.
+- Added responsive wrapping and containment guards for headings, links, controls and collection rows.
+
+## 0.6.0 — native stylesheet delivery
+
+- Replaced the hand-authored header stylesheet link with WordPress-native, theme-versioned style enqueueing.
+
+## 0.5.2 — concise Dutch validation copy
+
+- Corrected the singular announced form-error summary to clear B1 Dutch.
+
+## 0.5.1 — deterministic invalid-field focus
+
+- Applied first-invalid-field focus after Jetpack finishes rendering its validation messages.
+
+## 0.5.0 — form and skip-link accessibility
+
+- Kept the native WordPress skip link as the single sitewide bypass control.
+- Added an announced Jetpack form error summary, reliable first-error focus and error relationships for required checkboxes.
+- Added visible invalid-field styling without changing form submission or data handling.
+
+## 0.4.1 — dark-card heading contrast
+
+- Kept level-two headings in dark cards on the audited light text color after the consolidated cascade.
+
+## 0.4.0 — visitor-facing taxonomy hygiene
+
+- Redirected empty taxonomy archives temporarily to the seven-topic overview while keeping their terms available for future editorial use.
+- Redirected internal `type-*` tag archives to Claimchecks and excluded them from core taxonomy sitemaps.
+- Added a defensive `noindex` directive for non-editorial taxonomy archives that are rendered upstream.
+
+## 0.3.0 — reproducible FSE source
+
+- Synchronized all nine public template files with their proven live FSE content, including the functional home and index Query Loops.
+- Replaced duplicated desktop and mobile header links with native WordPress Navigation object 4 while preserving the dedicated search control.
+- Documented the versioned theme, FSE synchronization and rollback workflow.
+
+## 0.2.5 — dead cascade cleanup
+
+- Removed the non-matching legacy `body:root` critical-header block after 16 route/viewport comparisons proved zero computed-style or geometry changes.
+- Removed its 40 unnecessary priority declarations and corrected the migrated prelude opener without changing public presentation.
+
+## 0.2.4 — canonical CSS ownership
+
+- Absorbed the two remaining pre-theme live style layers in their original cascade order so the versioned theme is the sole owner of public presentation.
+- Preserved the audited production composition while making the legacy Site Tools and Agent Bridge CSS stores safe to empty without a layout shift.
+
+## 0.2.3 — live CSS consolidation
+
+- Migrated the snapshotted Boszien Site Tools cascade into the versioned theme stylesheet while preserving audited public layout parity.
+- Removed legacy `html body` specificity escalation and retained priority only where computed-style or interaction-state testing proved it necessary.
+- Restored WCAG AA contrast for the homepage medical boundary text from the canonical dark-section variant.
+
 ## 0.2.2 — article breakpoint recovery
 
 - Prevented the article evidence triad from collapsing between the tablet and full three-column desktop layouts.
